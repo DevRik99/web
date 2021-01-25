@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <title>Fedev</title>
+        <meta charset='UTF-8'>
+        <meta name="description" content="Descripción de la WEB">
+        <meta name='viewport' content='width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel='stylesheet' href='css/style.css'>
+    </head>
+<body>
+    <!-- --- CUSTOM CURSOR --- -->
+    <div class="cursor"></div>
+    <!-- --- NAVBAR & HERO --- -->
+    <header id="home">
+        <nav id="nav">
+           <div class="nav-container">
+                <div class="logo">
+                    <a href="#home">Fedev</a>
+                </div>
+                <div class="icono" id="icono">
+                    <div class="burger-closed" id="burger"></div>
+                </div>
+    
+                <div class="enlaces uno" id="enlaces">
+                    <a href="#services" id="menu"><span><</span>servicios<span>></span></a>
+                    <a href="#projects" id="menu2"><span><</span>proyectos<span>></span></a>
+                    <a href="#technologies" id="menu3"><span><</span>tecnologias<span>></span></a>
+                    <a href="#courses" id="menu4"><span><</span>cursos<span>></span></a>
+                    <a href="#contact" id="menu5"><span><</span>contacto<span>></span></a>
+                </div>
+           </div>
+        </nav>
+
+        <section style="overflow: hidden;">
+            <div class="element-1 rellax" data-rellax-speed="1">
+                <img src="assets/parallax-elements/3d_esfera_x307.png" alt="3D Sphere Element">
+            </div>
+        </section>
+        <div class="hero">
+            <div class="hero__content">
+                <h3 class="hero__content--logo">Fedev <span><img class="hero__content--imagen" src="assets/hero/line.svg" alt=""></span></h3>
+                <h1 class="hero__content--title title-animation">Hola!, soy Fede :)</h1>
+                <div class="hero__content--typed-text">
+                    <span class="typed-text"></span><span class="bar">&nbsp;</span>
+                </div>
+                <p class="hero__content--paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam nonumy eirmod tempor invidunt ut labore et<br> dolore magna aliquyam erat.</p>
+                <p class="hero__content--paragraph-two">Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy<br> eirmod tempor invidunt ut labore et<br> dolore magna aliquyam erat.</p>
+                <button class="hero__content--btn" type="button" onclick="letUsBegin()">Empecemos!</button>
+                
+                <ul>
+                    <li class="hero__content--icons">
+                        <i class="ri-facebook-circle-fill hero__content--icon"></i>
+                        <i class="ri-twitter-fill hero__content--icon"></i>
+                        <i class="ri-instagram-line hero__content--icon"></i>
+                        <i class="ri-linkedin-fill hero__content--icon"></i>
+                        <i class="ri-dribbble-line hero__content--icon"></i>
+                        <i class="ri-github-fill hero__content--icon"></i>
+                        <i class="ri-codepen-fill hero__content--icon"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__content--image">
+                <img src="assets/hero/desktop.png" alt="Computer Image">
+            </div>
+        </div>
+
+        <section style="overflow: hidden;">
+            <div class="element-2 rellax" data-rellax-speed="1">
+                <img src="assets/parallax-elements/3d_esfera_x132.png" alt="3D Sphere Element">
+            </div>
+        </section>
+    </header>
+    <!-- --- MAIN CONTENT --- -->
+    <main>
+        <section id="services">
+            <div class="services">
+                <div class="services__cards">
+                    <h1 class="services__cards--title title-animation">Servicios<span class="services__cards--dot-color">.</span></h1>
+                    <h3 class="services__cards--subtitle">Lorem ipsum dolor sit amet.</h3>
+
+                    <div class="services__cards__web-design">
+                        <h1 class="services__cards__web-design--title">Web Design.<span><i class="ri-window-line services__cards__web-design--icon"></i></span></h1>
+                        <p class="services__cards__web-design--paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing<br> elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+                        <p class="services__cards__web-design--paragraph-two">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr, sed<br> diam nonumy eirmod tempor invidunt ut.</p>
+                        <a class="services__cards__web-design--link" href="#">10 Proyectos</a>
+                    </div>
+
+                    <div class="services__cards__front-end">
+                        <h1 class="services__cards__front-end--title">Front-End.<span></span><i class="ri-file-code-line services__cards__front-end--icon"></i></span></h1>
+                        <p class="services__cards__front-end--paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing<br> elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+                        <p class="services__cards__front-end--paragraph-two">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr, sed<br> diam nonumy eirmod tempor invidunt ut.</p>
+                        <a class="services__cards__front-end--link" href="#">10 Proyectos</a>
+                    </div>
+                </div>
+
+                <div class="services__about-me">
+                    <h3 class="services__about-me--about-me">SOBRE MI</h3>
+                    <h2 class="services__about-me--title">Hola soy Federico!</h2>
+                    <p class="services__about-me--paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,<br> sed diam nonumy eirmod tempor invidunt ut labore et<br> dolore magna aliquyam erat, sed diam voluptua. At<br> vero eos et accusam et justo duo dolores et ea rebum.<br> Stet clita kasd gubergren, no sea takimata sanctus est<br> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit<br> amet, consetetur sadipscing elitr, sed diam nonumy<br> eirmod tempor invidunt ut labore et dolore magna<br> aliquyam erat, sed diam voluptua.</p>
+                    <p class="services__about-me--text">At vero eos et accusam et justo duo dolores et ea<br> rebum. Stet clita kasd gubergren, no sea takimata<br> sanctus est Lorem ipsum dolor sit amet.</p>
+                    <p class="services__about-me--paragraph-two">Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy<br> eirmod tempor invidunt ut labore et<br> dolore magna aliquyam erat, sed diam<br> voluptua. At vero eos et accusam et<br> justo duo dolores et ea rebum. Stet clita<br> kasd gubergren, no sea takimata<br> sanctus est Lorem ipsum dolor sit amet.<br> Lorem ipsum dolor sit amet, consetetur<br> sadipscing elitr, sed diam nonumy<br> eirmod tempor invidunt ut labore et<br> dolore magna aliquyam erat, sed diam<br> voluptua.</p>
+                    <p class="services__about-me--text-two">At vero eos et accusam et justo duo<br> dolores et ea rebum. Stet clita kasd<br> gubergren, no sea takimata sanctus est<br> Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <section style="overflow: hidden;">
+                <div class="element-3 rellax" data-rellax-speed="1">
+                    <img src="assets/parallax-elements/3d_cursor.png" alt="3D Cursor Element">
+                </div>
+            </section>
+        </section>
+
+        <span onclick="topFunction()" id="myBtn" class="back-top"><i class="ri-arrow-up-s-line"></i></span>
+
+        <section id="projects">
+            <div class="projects">
+                <div class="projects__texts">
+                    <h1 class="projects__texts--title title-animation">Proyectos<span class="projects__texts--dot-color">.</span></h1>
+                </div>
+                <div class="projects__subtitle">
+                    <h3 class="projects__subtitle--subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
+                    <h3 class="projects__subtitle--subtitle-two">Lorem ipsum dolor sit amet, consetetur<br> <span class="middle">sadipscing elitr.</span></h3>
+                </div>
+    
+                <div class="projects__cards-container">
+                    <div class="projects__cards-container--cards-one">
+                        <h1 class="projects__cards-container--title">Título</h1>
+                        <div class="projects__cards-container--label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                        </div>
+                    </div>
+                    <div class="projects__cards-container--cards-two">
+                        <h1 class="projects__cards-container--title">Título</h1>
+                        <div class="projects__cards-container--label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                        </div>
+                    </div>
+                    <div class="projects__cards-container--cards-three">
+                        <h1 class="projects__cards-container--title">Título</h1>
+                        <div class="projects__cards-container--label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                        </div>
+                    </div>
+                    <div class="projects__cards-container--cards-four">
+                        <h1 class="projects__cards-container--title">Título</h1>
+                        <div class="projects__cards-container--label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                            <img src="assets/projects/label.svg" alt="HTML 5 Label">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section style="overflow: hidden;">
+                <div class="element-4 rellax" data-rellax-speed="1">
+                    <img src="assets/parallax-elements/3d_cubo.png" alt="3D Cube Element">
+                </div>
+            </section>
+        </section>
+        <section style="overflow: hidden;">
+            <div class="element-5 rellax" data-rellax-speed="1">
+                <img src="assets/parallax-elements/3d_lapiz.png" alt="3D Pencil Element">
+            </div>
+        </section>
+        <section id="technologies">
+            <div class="technologies">
+                <div class="technologies__texts">
+                    <h1 class="technologies__texts--title title-animation">Tecnologías<span class="technologies__texts--dot-color">.</span></h1>
+                </div>
+                <div class="technologies__subtitle">
+                    <h3 class="technologies__subtitle--content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
+                    <h3 class="technologies__subtitle--content-two">Lorem ipsum dolor sit amet, consetetur<br> <span class="middle">sadipscing elitr.</span></h3>
+                </div>
+                <div class="technologies__icons">
+                    <div class="technologies__icons--cards">
+                        <div class="technologies__icons--image">
+                            <img src="assets/technologies/html5.svg" alt="HTML5 Icon">
+                        </div>
+                        <div class="technologies__icons--name">
+                            <h3>HTML 5</h3>
+                        </div>
+                    </div>
+                    <div class="technologies__icons--cards">
+                        <div class="technologies__icons--image">
+                            <img src="assets/technologies/css3.svg" alt="CSS 3 Icon">
+                        </div>
+                        <div class="technologies__icons--name">
+                            <h3>CSS 3</h3>
+                        </div>
+                    </div>
+                    <div class="technologies__icons--cards">
+                        <div class="technologies__icons--image">
+                            <img src="assets/technologies/sass.svg" alt="Sass Icon">
+                        </div>
+                        <div class="technologies__icons--name">
+                            <h3>Sass</h3>
+                        </div>
+                    </div>
+                    <div class="technologies__icons--cards">
+                        <div class="technologies__icons--image">
+                            <img src="assets/technologies/javascript.svg" alt="JavaScript Icon">
+                        </div>
+
+                        <div class="technologies__icons--name">
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                    <div class="technologies__icons--cards hidden">
+                        <div class="technologies__icons--image">
+                            <img src="assets/technologies/jQuery.svg" alt="jQuery Icon">
+                        </div>
+                        <div class="technologies__icons--name">
+                            <h3>jQuery</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="technologies__icons-two">
+                    <div class="technologies__icons-two--cards-two">
+                        <div class="technologies__icons-two--image">
+                            <img src="assets/technologies/bootstrap.svg" alt="Bootstrap Icon">
+                        </div>
+                        <div class="technologies__icons-two--name">
+                            <h3>Bootstrap 4</h3>
+                        </div>
+                    </div>
+                    <div class="technologies__icons-two--cards-two">
+                        <div class="technologies__icons-two--image">
+                            <img src="assets/technologies/git.svg" alt="Git Icon">
+                        </div>
+                        <div class="technologies__icons-two--name">
+                            <h3>Git</h3>
+                        </div>
+
+                    </div>
+                    <div class="technologies__icons-two--cards-two">
+                        <div class="technologies__icons-two--image">
+                            <img src="assets/technologies/wordpress.svg" alt="WordPress Icon">
+                        </div>
+                        <div class="technologies__icons-two--name">
+                            <h3>WordPress</h3>
+                        </div>
+                    </div>
+                    <div class="technologies__icons-two--cards-two visible">
+                        <div class="technologies__icons-two--image">
+                            <img src="assets/technologies/jQuery.svg" alt="jQuery Icon">
+                        </div>
+                        <div class="technologies__icons-two--name">
+                            <h3>jQuery</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses">
+            <div class="courses">
+                <div class="courses__container-one-title">
+                    <h1 class="courses__container-one-title--title title-animation">Cursos<span class="courses__container-one-title--dot-color"></span>.</span></h1>
+                </div>
+                <div class="courses__container-two-sub">
+                    <h3 class="courses__container-two-sub--subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
+                    
+                    <h3 class="courses__container-two-sub--subtitle-two">Lorem ipsum dolor sit amet, consetetur<br> <span class="middle">sadipscing elitr.</span></h3>
+                </div>
+
+                <div class="courses__container-one-year">
+                    <h2 class="courses__container-one-year--year">2020<span class="courses__container-one-year--line"><img src="assets/hero/line.svg" alt="Line"></spanc></h2>
+                </div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">YouTube<span class="courses__content--creator">por: SoyDalto</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Curso de CSS desde cero
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">CSS</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+
+                <span class="courses--break"></span>
+
+                <div class="courses__container-one">
+
+                </div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">YouTube<span class="courses__content--creator">por: SoyDalto</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Curso de JavaScript desde cero
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">JavaScript</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+
+                <span class="courses--break"></span>
+                <div class="courses__container-one"></div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">Platzi<span class="courses__content--creator">por: Sacha Lifszyc</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Curso de Bootstrap 4
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">Bootstrap 4</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+
+                <span class="courses--break"></span>
+                <div class="courses__container-one"></div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">Platzi<span class="courses__content--creator">por: Leonidas Esteban</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Curso de CSS Grid Layout
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">CSS</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+
+                <span class="courses--break"></span>
+                <div class="courses__container-one"></div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">Platzi<span class="courses__content--creator">por: Leonidas Esteban</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Curso de Animaciones para la Web
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">CSS</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+
+                <span class="courses--break"></span>
+                <div class="courses__container-one"></div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">Platzi<span class="courses__content--creator">por: Freddy Vega</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Curso Profesional de Git y GitHub
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">Git, GitHub</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+
+                <span class="courses--break"></span>
+                <div class="courses__container-one"></div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">YouTube<span class="courses__content--creator">por: Bluuweb</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Curso de SASS desde cero
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">Sass</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+
+                <span class="courses--break"></span>
+                <div class="courses__container-one"></div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">YouTube<span class="courses__content--creator">por: Jon Mircha</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Curso de Flexbox
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">CSS</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+
+                <span class="courses--break"></span>
+                <div class="courses__container-one-year">
+                    <h2 class="courses__container-one-year--year">2019<span class="courses__container-one-year--line"><img src="assets/hero/line.svg" alt="Line"></spanc></h2>
+                </div>
+                <div class="courses__container-two">
+                    <div class="courses__content">
+                        <h2 class="courses__content--plataform">Udemy<span class="courses__content--creator">por: Falcon Masters</span></h2>
+                    </div>
+                    <div class="courses__content-two">
+                        <p class="courses__content-two--course">Diseño Web Profesional: Completo, Práctico y desde 0
+                        <div class="courses__content-two--completed"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div></p>
+                    </div>
+                    <div class="courses__content-three">
+                        <h4 class="courses__content-three--technologies">HTML, CSS, SASS, Bootstrap 3, Responsive Web Design, jQuery, Wordpress</h4>
+                    </div>
+                    <div class="courses__content-two--completed-hidden"><img src="assets/courses/ico_completado.svg" alt="Course Complete Icon"><span>Completado</span></div>
+                </div>
+                <span class="courses--break"></span>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-form">
+                <div class="contact-form__contact">
+                    <img class="contact-form__contact--image" src="assets/parallax-elements/3d_mensaje.png" alt="Message 3D Element"></img>
+                    <h2 class="contact-form__contact--title">Tenés un proyecto en mente?</h2>
+                    <h2 class="contact-form__contact--title">Hablemos!</h2>
+                    <h2 class="contact-form__contact--title-two">Tenés un proyecto en<br> mente? Hablemos!</h2>
+                    <p class="contact-form__contact--description">Lorem ipsum dolor sit amet, consetetur<br>sadipscing elitr.</p>
+                    <p class="contact-form__contact--description-two">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
+                    <h3 class="contact-form__contact--mail">hola@fedevcode.com<span class="contact-form__contact--tel">+54 11 7364 4808</span></h3>
+                </div>
+                <div class="contact-form__form">
+                    <h3 class="contact-form__form--title">CONTACTO</h3>
+
+                    <form class="form-contact" action="" id="form">
+                        <div class="contact-form__form--input-container">
+                            <input class="contact-form__form--input" type="text" name="nombre" id="inputNombre" placeholder="Nombre completo" title="Este campo es requerido." required>
+                            
+                            <input class="contact-form__form--input" type="tel" name="telefono" id="inputTel" placeholder="Teléfono" title="Este campo es requerido." required>
+                        </div>
+                    
+                        <div class="contact-form__form--input-container-two">
+                            <input class="contact-form__form--input-two" id="inputEmail" type="email" name="correo" placeholder="Email" title="Este campo es obligatorio." required>
+
+                            <div class="contact-form__form--select-box" id="subject">
+                                <div class="contact-form__form--select-box--select" id="select">
+                                    <div class="contact-form__form--select-box--content-select">
+                                        <h1 class="contact-form__form--select-box--title-select" id="title">Asunto</h1>
+                                    </div>
+                                    <i class="ri-arrow-down-line" id="icon"></i>
+                                </div>
+                                <div class="contact-form__form--select-box--options" id="options">
+                                    <a href="#" class="option">
+                                        <div class="contact-form__form--select-box--content-option border" id="option">
+                                            <div class="contact-form__form--select-box--text">
+                                                <h2 class="contact-form__form--select-box--title-option hover" id="title">
+                                                    Desarrollo
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="option">
+                                        <div class="contact-form__form--select-box--content-option border" id="option">
+                                            <div class="contact-form__form--select-box--text">
+                                                <h2 class="contact-form__form--select-box--title-option hover" id="title">
+                                                    Diseño
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="option" id="last">
+                                        <div class="contact-form__form--select-box--content-option border" id="option">
+                                            <div class="contact-form__form--select-box--text">
+                                                <h2 class="contact-form__form--select-box--title-option hover" id="title">
+                                                    Oferta de trabajo
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="option">
+                                        <div class="contact-form__form--select-box--content-option border no-mg border-bt" id="option">
+                                            <div class="contact-form__form--select-box--text">
+                                                <h2 class="contact-form__form--select-box--title-option hover" id="title">
+                                                    Otro asunto
+                                                </h2>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <input type="hidden" name="asunto" id="inputSelect" value="">
+                            </div>
+                        </div>
+
+                        <div class="contact-form__form--input-container-three">
+                            <textarea class="contact-form__form--input-container-three--textarea" name="mensaje" id="inputMensaje" cols="70" rows="4" title="Este campo es requerido." placeholder="Escribe tu mensaje..." required></textarea>
+                        </div>
+
+                        <div class="contact-form__form--input-container-four">
+                            <button class="contact-form__form--input-container-four--btn" type="submit" id="btn-submit">Enviar mensaje<span><i class="ri-send-plane-2-fill"></i></span></button>
+                            <p class="mensaje-exito" id="mensaje-exito"><i class="ri-chat-check-line"></i>¡Enviado exitosamente!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- --- FOOTER --- -->
+    <footer>
+        <div class="footer">
+            <div class="footer__content">
+                <h2 class="footer__content--name"><span class="footer__content--text">Fede</span>&nbsp;Peralta<span class="footer__content--rights">2020 All rights reserved.</span></h2>
+            </div>
+            <div class="footer__social">
+                <ul class="footer__social--icons">
+                    <li>
+                        <i class="ri-facebook-circle-fill hero__content--icon"></i>
+                        <i class="ri-twitter-fill hero__content--icon"></i>
+                        <i class="ri-instagram-line hero__content--icon"></i>
+                        <i class="ri-linkedin-fill hero__content--icon"></i>
+                        <i class="ri-dribbble-line hero__content--icon"></i>
+                        <i class="ri-github-fill hero__content--icon"></i>
+                        <i class="ri-codepen-fill hero__content--icon"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/rellax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scroll-out.js"></script>
+    <script type="text/javascript">
+        ScrollOut({
+            targets: 'h1'
+        }) 
+    </script>
+</body>
+</html>
